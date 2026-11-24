@@ -1,0 +1,32 @@
+.product-card { background: #fff9fc; border: 1px solid #eddee5; border-radius: 13px; box-shadow: 0 3px 8px #6d243615; transition: transform 0.2s, box-shadow 0.2s; }
+.product-card:hover { transform: translateY(-3px); box-shadow: 0 7px 18px #6d24361a; }
+.product-photo { margin: 7px 7px 0; aspect-ratio: 1.4; background: linear-gradient(125deg, #f4e8ed, #f0e4e8); border-radius: 9px; }
+.product-image-button { padding: 24px 10px; }
+.product-photo .photo-art { width: 85%; max-height: 100%; mix-blend-mode: multiply; }
+.favorite-button { position: absolute; top: 7px; right: 7px; width: 34px; height: 34px; padding: 7px; display: grid; place-items: center; border-radius: 50%; background: #fffafce8; color: #69515e; }
+.favorite-button .icon { width: 20px; height: 20px; }
+.favorite-button:hover { background: #fff; }
+.favorite-button.active { color: #bd4b6e; }
+.favorite-button.active .icon { fill: #bd4b6e; stroke: #fff; stroke-width: 1.5; }
+.product-info { padding: 12px; }
+.product-info h2 { font-size: inherit; letter-spacing: normal; }
+.product-name { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; width: 100%; min-height: 2.8em; font-size: 0.875rem; font-weight: 600; line-height: 1.4; }
+.product-name:hover { color: var(--wine-dark); }
+.product-rating { font-size: 0.875rem; line-height: 1.8; color: #4e3c46; margin: 2px 0; }
+.product-rating > span:first-child { color: #bc7817; }
+.product-rating small { font-size: 0.75rem; color: var(--muted); }
+.product-bottom > strong { width: 100%; font-size: 1rem; color: #702b43; }
+.product-bottom .button { padding: 8px 6px; min-height: 36px; font-size: 0.875rem; }
+.product-bottom .button .icon { width: 16px; height: 16px; }
+@media (max-width: 767px) {
+  .product-photo { margin: 5px 5px 0; aspect-ratio: 1.25; border-radius: 8px; }
+  .product-image-button { padding: 25px 8px; }
+  .product-info { padding: 10px; }
+  .favorite-button { top: 5px; right: 5px; width: 32px; height: 32px; }
+  .product-bottom .button { gap: 5px; }
+}
+@media (max-width: 359px) {
+  .product-info { padding: 9px 7px; }
+  .product-bottom .button { gap: 4px; font-size: 0.8rem; }
+  .product-bottom .button .icon { width: 14px; height: 14px; }
+}

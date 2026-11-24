@@ -1,0 +1,13 @@
+.page-heading { margin-bottom: 21px; }
+.page-heading p { font-size: 0.875rem; color: var(--muted); margin-top: 7px; }
+.sort-control { gap: 6px; white-space: nowrap; border: 1px solid var(--line); border-radius: 9px; padding: 8px 10px; background: #fffbfd; font-size: 0.875rem; }
+.sort-control select { appearance: none; max-width: 155px; padding: 2px 0; border: 0; background: none; color: var(--ink); font-size: 0.875rem; font-weight: 600; cursor: pointer; }
+.sort-control .icon { width: 14px; height: 14px; }
+@media (max-width: 767px) {
+  .page-heading { align-items: flex-start; gap: 12px; margin-bottom: 19px; }
+  .page-heading h1 { font-size: 1.6rem; }
+  .page-heading p { display: none; }
+  .sort-control { padding: 7px 8px; }
+  .sort-control > span { display: none; }
+  .sort-control select { max-width: 140px; }
+}

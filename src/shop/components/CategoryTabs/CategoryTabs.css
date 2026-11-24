@@ -1,0 +1,13 @@
+.category-tabs { gap: 10px; overflow-x: auto; scrollbar-width: none; padding: 4px 2px 7px; }
+.category-tabs::-webkit-scrollbar { display: none; }
+.pill { display: inline-flex; flex: 1; align-items: center; justify-content: center; gap: 9px; padding: 10px 17px; border: 1px solid #e9d5df; border-radius: 999px; background: linear-gradient(#fffafc, #f8edf1); box-shadow: 0 2px 4px #6b2f3c05; font-size: 0.875rem; font-weight: 500; line-height: 1.3; white-space: nowrap; }
+.pill .icon { width: 20px; height: 20px; }
+.pill.active, .pill:hover { background: linear-gradient(110deg, #ad586f, #a05268); color: #fff; border-color: transparent; }
+@media (max-width: 1023px) {
+  .category-tabs { gap: 7px; }
+  .pill { padding: 9px 13px; gap: 6px; }
+  .pill .icon { width: 17px; height: 17px; }
+}
+@media (max-width: 767px) {
+  .pill { flex: none; padding: 9px 16px; }
+}

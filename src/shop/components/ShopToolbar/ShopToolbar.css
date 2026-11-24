@@ -1,0 +1,16 @@
+.shop-toolbar { margin: 14px 0 18px; }
+.collection-search { color: #82737b; border-bottom: 1px solid transparent; min-height: 36px; }
+.collection-search:focus-within { border-color: var(--wine); }
+.collection-search .icon { width: 18px; height: 18px; }
+.collection-search input { border: 0; background: transparent; outline: none; font-size: 0.875rem; width: 230px; color: var(--ink); }
+.collection-search input::placeholder { color: var(--muted); opacity: 1; }
+.result-count { font-size: 0.875rem; color: var(--muted); margin-left: auto; }
+.filter-toggle { display: none; }
+@media (max-width: 767px) {
+  .shop-toolbar { gap: 8px; margin: 10px 0 16px; }
+  .collection-search { border-color: var(--line); flex: 1; min-width: 120px; }
+  .collection-search input { width: 100%; }
+  .filter-toggle { display: inline-flex; padding: 8px 10px; min-height: 36px; }
+  .filter-toggle .icon { width: 16px; height: 16px; }
+  .result-count { order: 3; flex-basis: 100%; margin-left: 0; font-size: 0.8rem; }
+}

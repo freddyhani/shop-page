@@ -1,0 +1,12 @@
+.site-footer { max-width: 1540px; margin: 0 auto; border-top: 1px solid var(--line); padding: 25px 30px; color: var(--muted); font-size: 0.875rem; }
+.site-footer > span { font-size: 1.2rem; letter-spacing: 0.04em; color: var(--wine); }
+.site-footer small { display: block; font-size: 0.8rem; letter-spacing: 0; color: var(--muted); }
+.bottom-nav { display: none; }
+@media (max-width: 767px) {
+  .site-footer { display: none; }
+  .bottom-nav { display: flex; align-items: center; justify-content: space-evenly; position: fixed; bottom: 0; left: 0; right: 0; z-index: 45; min-height: 75px; padding: 8px 6px max(10px, env(safe-area-inset-bottom)); border-top: 1px solid #eddae3; background: #fff9fbf5; backdrop-filter: blur(18px); box-shadow: 0 -4px 20px #8f405808; }
+  .bottom-item { display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 4px; padding: 6px 14px; min-height: 52px; border-radius: 14px; font-size: 0.8rem; font-weight: 500; }
+  .bottom-item.active { color: #8e173a; background: linear-gradient(135deg, #f8dbe2, #fce9ed); }
+  .bottom-item.active > .icon { fill: #8e173a16; stroke-width: 2; }
+  .bottom-brand { display: grid; place-items: center; width: 48px; height: 48px; border: 1px solid #e6ced8; border-radius: 50%; color: var(--wine-dark); background: #fff9fb; font-size: 1.6rem; font-weight: 700; }
+}
